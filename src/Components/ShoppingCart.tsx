@@ -138,7 +138,7 @@ export class ShoppingCart extends Component<object, ShoppingCartState> {
     return (
       <div className="cart">
     
-    // TOP BOX: catalogue of items
+  
         <section className="cart__panel">
           <h2>Shopping Cart Example</h2>
 
@@ -152,7 +152,7 @@ export class ShoppingCart extends Component<object, ShoppingCartState> {
               return (
                 <li key={item.id} className="cart__item">
                   
-                  // checkbox for selecting the item
+                 
                   <label>
                     <input
                       type="checkbox"
@@ -163,7 +163,7 @@ export class ShoppingCart extends Component<object, ShoppingCartState> {
                     <span className="cart__price">(${item.unitPrice})</span>
                   </label>
                   
-                  // dropdown for quantity
+                  
                   <select
                     aria-label={`${item.name} quantity`}
                     value={selection.quantity}
@@ -181,7 +181,7 @@ export class ShoppingCart extends Component<object, ShoppingCartState> {
           </ul>
         </section>
 
-       // BOTTOM BOX: selected items + total cost
+
         {showTotal && (
           <section className="cart__panel">
             <h2>Selected Items:</h2>
